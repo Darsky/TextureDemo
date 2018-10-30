@@ -51,10 +51,10 @@ class LayoutDemoNode: ASDisplayNode {
     }
     
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-        self.imageNode.style.preferredSize = CGSize(width: constrainedSize.min.width, height: constrainedSize.min.height/3.0)
+        let imageBox = ASRatioLayoutSpec(ratio: 9.0/16.0, child: self.imageNode)
         self.titleNode.style.preferredSize = CGSize(width: constrainedSize.min.width, height: 30.0)
         let nameBox = ASInsetLayoutSpec(insets: UIEdgeInsets(top: CGFloat.infinity, left: 0.0, bottom: 0.0, right: 0.0), child: self.titleNode)
-        let imageWithName = ASOverlayLayoutSpec(child: self.imageNode, overlay: nameBox)
+        let imageWithName = ASOverlayLayoutSpec(child: imageBox, overlay: nameBox)
 
         let contentSpec = ASStackLayoutSpec.vertical()
         contentSpec.spacing = 10.0
