@@ -14,8 +14,6 @@
 		DEE5F441218692F4000FEED8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE5F43F218692F4000FEED8 /* Main.storyboard */; };
 		DEE5F443218692F6000FEED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE5F442218692F6000FEED8 /* Assets.xcassets */; };
 		DEE5F446218692F6000FEED8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE5F444218692F6000FEED8 /* LaunchScreen.storyboard */; };
-		DEE5F4502186986A000FEED8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5F44F2186986A000FEED8 /* BaseViewController.swift */; };
-		DEE5F45221869897000FEED8 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5F45121869897000FEED8 /* BaseNavigationController.swift */; };
 		DEE5F4562186FD38000FEED8 /* TableNodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5F4552186FD38000FEED8 /* TableNodeViewController.swift */; };
 		DEE5F4582186FFCD000FEED8 /* TableDemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5F4572186FFCD000FEED8 /* TableDemoCell.swift */; };
 		F5D94A4E7A1CD5A30AD714E0 /* Pods_TextureDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178158FCAADC94FD39D7C995 /* Pods_TextureDemo.framework */; };
@@ -33,8 +31,6 @@
 		DEE5F442218692F6000FEED8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEE5F445218692F6000FEED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEE5F447218692F6000FEED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEE5F44F2186986A000FEED8 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		DEE5F45121869897000FEED8 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		DEE5F4552186FD38000FEED8 /* TableNodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableNodeViewController.swift; sourceTree = "<group>"; };
 		DEE5F4572186FFCD000FEED8 /* TableDemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDemoCell.swift; sourceTree = "<group>"; };
 		F01865A36AE76AE0FFD375DE /* Pods-TextureDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextureDemo/Pods-TextureDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				DEE5F45321869DF9000FEED8 /* example */,
-				DEE5F44E21869850000FEED8 /* Base */,
 				DEE5F43B218692F4000FEED8 /* AppDelegate.swift */,
 				DEE5F43D218692F4000FEED8 /* ViewController.swift */,
 				DEE5F43F218692F4000FEED8 /* Main.storyboard */,
@@ -109,15 +104,6 @@
 				DEE5F447218692F6000FEED8 /* Info.plist */,
 			);
 			path = TextureDemo;
-			sourceTree = "<group>";
-		};
-		DEE5F44E21869850000FEED8 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				DEE5F45121869897000FEED8 /* BaseNavigationController.swift */,
-				DEE5F44F2186986A000FEED8 /* BaseViewController.swift */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		DEE5F45321869DF9000FEED8 /* example */ = {
@@ -257,13 +243,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE7F67422188034A00C4E7F5 /* LayoutDemoNode.swift in Sources */,
-				DEE5F45221869897000FEED8 /* BaseNavigationController.swift in Sources */,
 				DEE5F43E218692F4000FEED8 /* ViewController.swift in Sources */,
 				DEE5F43C218692F4000FEED8 /* AppDelegate.swift in Sources */,
 				DE7F67402187EA8700C4E7F5 /* LayoutDemoController.swift in Sources */,
 				DEE5F4582186FFCD000FEED8 /* TableDemoCell.swift in Sources */,
 				DEE5F4562186FD38000FEED8 /* TableNodeViewController.swift in Sources */,
-				DEE5F4502186986A000FEED8 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

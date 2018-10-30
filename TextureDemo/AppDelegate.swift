@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.backgroundColor = UIColor.black
         self.window?.resignKey()
         self.window?.makeKeyAndVisible()
-        let mainPage:BaseNavigationController = BaseNavigationController(rootViewController: ViewController())
+        let mainPage = UINavigationController(rootViewController: ViewController())
         self.window?.rootViewController = mainPage
         return true
     }
