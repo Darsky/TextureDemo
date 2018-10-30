@@ -57,6 +57,7 @@ class LayoutDemoNode: ASDisplayNode {
         let imageWithName = ASOverlayLayoutSpec(child: self.imageNode, overlay: nameBox)
 
         let contentSpec = ASStackLayoutSpec.vertical()
+        contentSpec.spacing = 10.0
         contentSpec.style.flexShrink = 1.0;
         contentSpec.style.flexGrow = 1.0;
         contentSpec.children = [self.descriptionNode,self.subTitleNode]
@@ -68,6 +69,7 @@ class LayoutDemoNode: ASDisplayNode {
         let detailSpec = ASInsetLayoutSpec(insets: UIEdgeInsets(top: 10.0, left: 0.0, bottom: 0.0, right: 0.0), child: detailBox)
         
         let contextSpec = ASStackLayoutSpec.vertical()
+        contextSpec.justifyContent = ASStackLayoutJustifyContent.start
         contextSpec.children = [imageWithName,detailSpec]
         
         return ASInsetLayoutSpec(insets: UIEdgeInsets(top: 10, left: 13.0, bottom: 10.0, right: 13.0), child: contextSpec)
