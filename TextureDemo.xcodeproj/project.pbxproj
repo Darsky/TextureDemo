@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE7F67402187EA8700C4E7F5 /* LayoutDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7F673F2187EA8700C4E7F5 /* LayoutDemoController.swift */; };
+		DE7F67422188034A00C4E7F5 /* LayoutDemoNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7F67412188034A00C4E7F5 /* LayoutDemoNode.swift */; };
 		DEE5F43C218692F4000FEED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5F43B218692F4000FEED8 /* AppDelegate.swift */; };
 		DEE5F43E218692F4000FEED8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5F43D218692F4000FEED8 /* ViewController.swift */; };
 		DEE5F441218692F4000FEED8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE5F43F218692F4000FEED8 /* Main.storyboard */; };
 		DEE5F443218692F6000FEED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE5F442218692F6000FEED8 /* Assets.xcassets */; };
 		DEE5F446218692F6000FEED8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE5F444218692F6000FEED8 /* LaunchScreen.storyboard */; };
+		DEE5F4502186986A000FEED8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5F44F2186986A000FEED8 /* BaseViewController.swift */; };
+		DEE5F45221869897000FEED8 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5F45121869897000FEED8 /* BaseNavigationController.swift */; };
+		DEE5F4562186FD38000FEED8 /* TableNodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5F4552186FD38000FEED8 /* TableNodeViewController.swift */; };
+		DEE5F4582186FFCD000FEED8 /* TableDemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5F4572186FFCD000FEED8 /* TableDemoCell.swift */; };
+		F5D94A4E7A1CD5A30AD714E0 /* Pods_TextureDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178158FCAADC94FD39D7C995 /* Pods_TextureDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10257428D3B8D9426B893F6A /* Pods-TextureDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextureDemo/Pods-TextureDemo.release.xcconfig"; sourceTree = "<group>"; };
+		178158FCAADC94FD39D7C995 /* Pods_TextureDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE7F673F2187EA8700C4E7F5 /* LayoutDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutDemoController.swift; sourceTree = "<group>"; };
+		DE7F67412188034A00C4E7F5 /* LayoutDemoNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutDemoNode.swift; sourceTree = "<group>"; };
 		DEE5F438218692F4000FEED8 /* TextureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE5F43B218692F4000FEED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEE5F43D218692F4000FEED8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +33,11 @@
 		DEE5F442218692F6000FEED8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEE5F445218692F6000FEED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEE5F447218692F6000FEED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE5F44F2186986A000FEED8 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DEE5F45121869897000FEED8 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		DEE5F4552186FD38000FEED8 /* TableNodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableNodeViewController.swift; sourceTree = "<group>"; };
+		DEE5F4572186FFCD000FEED8 /* TableDemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDemoCell.swift; sourceTree = "<group>"; };
+		F01865A36AE76AE0FFD375DE /* Pods-TextureDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextureDemo/Pods-TextureDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +45,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D94A4E7A1CD5A30AD714E0 /* Pods_TextureDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7BA2399DB8FFB83CE95CE9AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F01865A36AE76AE0FFD375DE /* Pods-TextureDemo.debug.xcconfig */,
+				10257428D3B8D9426B893F6A /* Pods-TextureDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8768765CCA4C320375CFAD95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				178158FCAADC94FD39D7C995 /* Pods_TextureDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE7F673E2187EA7000C4E7F5 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				DE7F673F2187EA8700C4E7F5 /* LayoutDemoController.swift */,
+				DE7F67412188034A00C4E7F5 /* LayoutDemoNode.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
 		DEE5F42F218692F4000FEED8 = {
 			isa = PBXGroup;
 			children = (
 				DEE5F43A218692F4000FEED8 /* TextureDemo */,
 				DEE5F439218692F4000FEED8 /* Products */,
+				7BA2399DB8FFB83CE95CE9AA /* Pods */,
+				8768765CCA4C320375CFAD95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +99,8 @@
 		DEE5F43A218692F4000FEED8 /* TextureDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DEE5F45321869DF9000FEED8 /* example */,
+				DEE5F44E21869850000FEED8 /* Base */,
 				DEE5F43B218692F4000FEED8 /* AppDelegate.swift */,
 				DEE5F43D218692F4000FEED8 /* ViewController.swift */,
 				DEE5F43F218692F4000FEED8 /* Main.storyboard */,
@@ -64,6 +111,33 @@
 			path = TextureDemo;
 			sourceTree = "<group>";
 		};
+		DEE5F44E21869850000FEED8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DEE5F45121869897000FEED8 /* BaseNavigationController.swift */,
+				DEE5F44F2186986A000FEED8 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DEE5F45321869DF9000FEED8 /* example */ = {
+			isa = PBXGroup;
+			children = (
+				DE7F673E2187EA7000C4E7F5 /* Layout */,
+				DEE5F4542186FCC8000FEED8 /* ASTableNode */,
+			);
+			path = example;
+			sourceTree = "<group>";
+		};
+		DEE5F4542186FCC8000FEED8 /* ASTableNode */ = {
+			isa = PBXGroup;
+			children = (
+				DEE5F4552186FD38000FEED8 /* TableNodeViewController.swift */,
+				DEE5F4572186FFCD000FEED8 /* TableDemoCell.swift */,
+			);
+			path = ASTableNode;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEE5F44A218692F6000FEED8 /* Build configuration list for PBXNativeTarget "TextureDemo" */;
 			buildPhases = (
+				F1AC5EFD7A69EC2994F91ADC /* [CP] Check Pods Manifest.lock */,
 				DEE5F434218692F4000FEED8 /* Sources */,
 				DEE5F435218692F4000FEED8 /* Frameworks */,
 				DEE5F436218692F4000FEED8 /* Resources */,
+				DBE97B069951740A0D96802E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +206,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DBE97B069951740A0D96802E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TextureDemo/Pods-TextureDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextureDemo/Pods-TextureDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1AC5EFD7A69EC2994F91ADC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextureDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DEE5F434218692F4000FEED8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE7F67422188034A00C4E7F5 /* LayoutDemoNode.swift in Sources */,
+				DEE5F45221869897000FEED8 /* BaseNavigationController.swift in Sources */,
 				DEE5F43E218692F4000FEED8 /* ViewController.swift in Sources */,
 				DEE5F43C218692F4000FEED8 /* AppDelegate.swift in Sources */,
+				DE7F67402187EA8700C4E7F5 /* LayoutDemoController.swift in Sources */,
+				DEE5F4582186FFCD000FEED8 /* TableDemoCell.swift in Sources */,
+				DEE5F4562186FD38000FEED8 /* TableNodeViewController.swift in Sources */,
+				DEE5F4502186986A000FEED8 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +407,7 @@
 		};
 		DEE5F44B218692F6000FEED8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F01865A36AE76AE0FFD375DE /* Pods-TextureDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,7 +417,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = PigPopcorn.TextureDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = PigPopcorn.MyDubanSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,6 +426,7 @@
 		};
 		DEE5F44C218692F6000FEED8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10257428D3B8D9426B893F6A /* Pods-TextureDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,7 +436,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = PigPopcorn.TextureDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = PigPopcorn.MyDubanSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
