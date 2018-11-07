@@ -9,27 +9,28 @@
 import UIKit
 import AsyncDisplayKit
 
-class ViewController: UIViewController,ASTableDataSource,ASTableDelegate {
+class ViewController: ASViewController<ASDisplayNode>,ASTableDataSource,ASTableDelegate {
 
-    private var tableNode:ASTableNode?
+    private var tableNode = ASTableNode()
     
     private let demoArray = ["TableNode","Layout"]
+    
+    init() {
+        tableNode = ASTableNode(style: UITableView.Style.plain)
+        super.init(node:self.tableNode)
+        self.tableNode.dataSource = self
+        self.tableNode.delegate = self
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        if self.tableNode == nil {
-            self.tableNode = ASTableNode(style: UITableView.Style.plain)
-            self.tableNode?.dataSource = self
-            self.tableNode?.delegate = self
-            self.tableNode?.frame = self.view.bounds
-            self.view.addSubnode(self.tableNode!)
-        }
-    }
+
     
     // MARK: - ASTableDataSource and ASTableDelegate
     func tableNode(_ tableNode: ASTableNode, numberOfRowsInSection section: Int) -> Int {
@@ -38,7 +39,8 @@ class ViewController: UIViewController,ASTableDataSource,ASTableDelegate {
     
     func tableNode(_ tableNode: ASTableNode, constrainedSizeForRowAt indexPath: IndexPath) -> ASSizeRange {
         let screenWidth:CGFloat = UIScreen.main.bounds.size.width
-        return ASSizeRange(min: CGSize(width: screenWidth, height: 60.0), max: CGSize(width: screenWidth, height: 80.0))
+        return ASSizeRange(min: CGSize(width: screenWidth, height: 60.0),
+                           max: CGSize(width: screenWidth, height: 80.0))
     }
     
     func tableNode(_ tableNode: ASTableNode, nodeBlockForRowAt indexPath: IndexPath) -> ASCellNodeBlock {

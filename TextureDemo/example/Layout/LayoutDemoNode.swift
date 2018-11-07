@@ -41,7 +41,7 @@ class LayoutDemoNode: ASDisplayNode {
         self.likeButton.borderColor = UIColor(red: 1/255.0, green: 198/255.0, blue: 30.0, alpha: 1.0).cgColor
         self.likeButton.borderWidth = 1.0
         self.likeButton.cornerRadius = 5.0
-        self.likeButton.setAttributedTitle(NSAttributedString(string: "98", attributes: [NSAttributedString.Key.foregroundColor:UIColor(red: 190/255.0, green: 190/255.0, blue: 190/255.0, alpha: 1.0),NSAttributedString.Key.font:UIFont.systemFont(ofSize: 14)]), for: UIControl.State.normal)
+        self.likeButton.setAttributedTitle(NSAttributedString(string: "98♥️", attributes: [NSAttributedString.Key.foregroundColor:UIColor(red: 190/255.0, green: 190/255.0, blue: 190/255.0, alpha: 1.0),NSAttributedString.Key.font:UIFont.systemFont(ofSize: 14)]), for: UIControl.State.normal)
 
         addSubnode(self.imageNode)
         addSubnode(self.titleNode)
@@ -62,7 +62,8 @@ class LayoutDemoNode: ASDisplayNode {
         contentSpec.style.flexGrow = 1.0;
         contentSpec.children = [self.descriptionNode,self.subTitleNode]
         self.likeButton.style.preferredSize = CGSize(width: 60.0, height: 40.0)
-        
+        contentSpec.style.flexBasis = ASDimensionMake("80%")
+        self.likeButton.style.flexBasis = ASDimensionMake("20%")
         let detailBox = ASStackLayoutSpec.horizontal()
         detailBox.children = [contentSpec,self.likeButton]
         
@@ -70,6 +71,7 @@ class LayoutDemoNode: ASDisplayNode {
         
         let contextSpec = ASStackLayoutSpec.vertical()
         contextSpec.children = [imageWithName,detailSpec]
+        contextSpec.justifyContent = .center
         
         return ASInsetLayoutSpec(insets: UIEdgeInsets(top: 10, left: 13.0, bottom: 10.0, right: 13.0), child: contextSpec)
     }

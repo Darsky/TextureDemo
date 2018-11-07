@@ -46,30 +46,6 @@ class TableNodeViewController: ASViewController<ASDisplayNode> {
         // Do any additional setup after loading the view.
     }
     
-    func nextPageWithCompletion(_ block: @escaping (_ results: [String]) -> ()) {
-        let moreImages = Array(self.imagesArray[0 ..< 5])
-        DispatchQueue.main.async {
-            block(moreImages)
-        }
-    }
-    
-    func insertNewRows(_ newImages: [String]) {
-        var indexPaths = [IndexPath]()
-        
-        let newTotalNumberOfPhotos = self.imagesArray.count + newImages.count
-        
-        for row in self.imagesArray.count ..< newTotalNumberOfPhotos {
-            let path = IndexPath(row: row, section: 0)
-            indexPaths.append(path)
-        }
-        
-        self.imagesArray.append(contentsOf: newImages)
-        if let tableNode = node as? ASTableNode {
-            tableNode.insertRows(at: indexPaths, with: .none)
-        }
-    }
-    
-    // MARK: - ASTableDataSource && ASTableDelegate
 }
 
 extension TableNodeViewController: ASTableDataSource {
@@ -95,14 +71,5 @@ extension TableNodeViewController: ASTableDataSource {
 }
 
 extension TableNodeViewController: ASTableDelegate {
-    func tableNode(_ tableNode: ASTableNode, willBeginBatchFetchWith context: ASBatchContext) {
-        nextPageWithCompletion { (results) in
-            self.insertNewRows(results)
-            context.completeBatchFetching(true)
-        }
-    }
-    
-    func shouldBatchFetch(for tableNode: ASTableNode) -> Bool {
-        return true
-    }
+
 }
